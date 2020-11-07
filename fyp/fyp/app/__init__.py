@@ -17,7 +17,8 @@ db = SQLA(app)
 appbuilder = AppBuilder(
     app,
     db.session,
-    indexview = MyIndexView
+    indexview = MyIndexView,
+    base_template='new_base.html'
 )
 
 

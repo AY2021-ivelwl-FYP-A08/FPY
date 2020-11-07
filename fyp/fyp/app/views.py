@@ -52,7 +52,9 @@ class BenefitView(ModelView):
 
 
 db.create_all()
-
+#appbuilder.add_link(
+ #   "index", "MyIndexView.index"
+ #   )
 appbuilder.add_view_no_menu(EmployeeHistoryView, "EmployeeHistoryView")
 appbuilder.add_view(
     EmployeeView, "Employees", icon="fa-folder-open-o", category="Company"
@@ -67,6 +69,4 @@ appbuilder.add_view(
 appbuilder.add_view(
     BenefitView, "Benefits", icon="fa-folder-open-o", category="Company"
 )
-appbuilder.add_link(
-    "index", "MyIndexView"
-    )
+
